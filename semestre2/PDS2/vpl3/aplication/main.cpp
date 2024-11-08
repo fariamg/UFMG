@@ -14,7 +14,7 @@ int main() {
             string placa;
             int capacidade;
             cin >> placa >> capacidade;
-            
+
             Onibus* onibus = new Onibus(placa, capacidade);
 
             if (!empresa->adicionar_onibus(onibus)) {
@@ -22,7 +22,7 @@ int main() {
                 delete onibus;
                 continue;
             }
-            
+
             cout << "novo onibus cadastrado" << endl;
         }
 
