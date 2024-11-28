@@ -31,12 +31,8 @@ int main() {
         return a.getName() < b.getName();
     });
 
-   for (const Student& student : classList) {
+    for (const Student& student : classList) {
         std::cout << student.toString() << std::endl;
-        std::cout << std::fixed << std::setprecision(2)
-                  << student.gradesAverage() << " "
-                  << student.maxGrade() << " "
-                  << student.minGrade() << std::endl;
     }
 
     return 0;

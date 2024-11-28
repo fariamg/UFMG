@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <iostream>
 #include <sstream>
+#include <iomanip>
 
 #include "aluno.hpp"
 
@@ -46,5 +47,10 @@ std::string Student::toString() const {
     for (int grade : grades) {
         oss << grade << " ";
     }
+    oss << std::endl;
+    oss << std::fixed << std::setprecision(2)
+        << gradesAverage() << " "
+        << maxGrade() << " "
+        << minGrade();
     return oss.str();
 }
