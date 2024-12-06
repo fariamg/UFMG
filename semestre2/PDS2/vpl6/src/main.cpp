@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <iomanip>
 
-#include "C:\DESENVOLVIMENTO\Linguagem C (UFMG)\UFMG\semestre2\PDS2\vpl6\include\aluno.hpp"
+#include "aluno.hpp"
 
 int main() {
     std::vector<Student> classList;
