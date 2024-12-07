@@ -37,9 +37,9 @@ public:
         return objectCounter;
     }
 
-    const void *getMemoryAddress() const
+    const MyClass* getMemoryAddress() const
     {
-        return static_cast<const void *>(this);
+        return this;
     }
 
     std::string toString() {
